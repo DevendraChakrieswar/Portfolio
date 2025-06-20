@@ -1,7 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Toaster } from "./components/ui/toaster";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello !!
-    </h1>
+    <>
+      <Toaster />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={ <Home/> }/>
+          <Route path="*" element={ <NotFound /> }/>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
