@@ -31,7 +31,7 @@ export const AboutSection = () => {
                                 Get In Touch
                             </a>
 
-                            <a href="https://drive.google.com/drive/folders/1rRk4PuWyNcyNrPEOpXFE1jTH6MOVzkW2" className="
+                            <a href="https://drive.google.com/uc?export=download&id=1Aq-eq74aa06jl71n1FQpl-V9NL3ZrKFm" className="
                             px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 {" "}
                                 Download Resume
