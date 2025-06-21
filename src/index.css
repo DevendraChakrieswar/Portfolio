@@ -11,8 +11,11 @@
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    /* --primary: 250 47% 60%;
+    --primary-foreground: 210 40% 98%; */
+    --primary: 210 100% 60%;              /* Blue */
+    --primary-foreground: 0 0% 100%;      /* White for contrast */
+
     --input: 214 32% 91%; /* same as --border or your custom value */
 
     --border: 214 32% 91%;
@@ -23,8 +26,12 @@
     --foreground: 213 31% 91%;
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
+    --primary: 210 100% 70%;
+    --primary-foreground: 0 0% 100%;
+
+
+    /* --primary: 250 65% 65%;
+    --primary-foreground: 213 31% 91%; */
 
     --input: 217 33% 20%;
 
@@ -101,7 +108,7 @@
 
   .text-glow {
     @apply relative;
-    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+    text-shadow: 0 0 10px rgba(2, 168, 251, 0.467);
   }
 
   .card-hover {
@@ -119,12 +126,14 @@
     @apply px-6 py-2 rounded-full font-medium transition-all duration-300;
     background-color: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+    /* box-shadow: 0 0 10px rgba(139, 92, 246, 0.5); */
+    box-shadow: 0 0 10px rgba(2, 168, 251, 0.5);
   }
 
   .cosmic-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+    /* box-shadow: 0 0 10px rgba(139, 92, 246, 0.5); */
+    box-shadow: 0 0 10px rgba(2, 168, 251, 0.896);
   }
 
   .cosmic-button:active {
