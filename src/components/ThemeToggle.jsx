@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { cn } from "../lib/utils";
 
 
-export const ThemeToggle = () => {
+export const ThemeToggle = ({ isMobile = false }) => {
 
     const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -32,9 +32,12 @@ export const ThemeToggle = () => {
 
     return (
         <button onClick={toggleTheme} className={cn(
-            "fixed max-sm:hidden sm:top-[17px] lg:top-4 top-4 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-            "focus:outline-hidden focus-visible:ring-0 border border-transparent"
-        )}>
+            "p-2 rounded-full transition-colors duration-300 border border-transparent",
+        !isMobile
+          ? "fixed sm:top-5 lg:top-[15px] top-4 md:top-4 right-5 z-50 hidden sm:block" // Desktop
+          : "block sm:hidden" // Mobile inside menu
+        )}
+        aria-label="Toggle Theme">
         {isDarkMode ? (
              <Sun className="h-6 w-6 text-yellow-300"/> 
             ) : (
