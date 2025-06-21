@@ -8,16 +8,15 @@ export const HeroSection = () => {
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                         <span className="opacity-0 animate-fade-in">Hi, I'm</span>
-                        <span className="text-primary opacity-0 animate-fade-in-delay-1"> 
+                        <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent opacity-0 animate-fade-in-delay-1"> 
                             {" "}
                             Devendra
                         </span>
-                        <span className="text-gradient opacity-0 animate-fade-in-delay-2"> Chakrieswar</span>
+                        <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent opacity-0 animate-fade-in-delay-2"> Chakrieswar</span>
                     </h1>
                     
                     <p className="text-lg opacity-0 md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-delay-3">
-                        Aspiring Software Developer with strong problem-solving skills and hands-on experience in diverse projects and
-                        technical competitions. Passionate about building efficient solutions and contributing to innovative teams.
+                        Aspiring Software Developer with strong problem-solving skills, project experience, and a passion for building efficient, innovative solutions.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
